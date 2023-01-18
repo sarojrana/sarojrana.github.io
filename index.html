@@ -1,8 +1,187 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+<<<<<<< HEAD
 	<title> Wedding Diary Australia </title>
+=======
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Diary Australia- Photography & Videography</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Tailwind CSS framework with first-party plugin -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+>>>>>>> 3715c2c (Deploy wedding diary australia website.)
 </head>
+
 <body>
-	<h1 style="color: red">Under Construction!!!</h1>
+
+    <!-- Logo and Main Navigation -->
+    <div class="logo-navigation flex flex-row justify-center">
+        <div class="flex flex-col items-center w-full">
+            <img src="assets/images/logo/logo.png" class="w-60 py-6" alt="Wedding Diary Australia" srcset="">
+            <nav class="w-full flex flex-row justify-center">
+                <div class="w-full px-2">
+                    <ul class="text-center grid grid-cols-2 gap-3 md:grid-cols-4">
+                        <li class="w-full block">
+                            <a href="#"
+                                class="border border-1 border-gray-200 py-6 hover:bg-gray-100 font-thin text-gray-800 block text-xl"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li class="w-full block">
+                            <a href="#"
+                                class="border border-1 border-gray-200 py-6 hover:bg-gray-100 font-thin text-gray-800 block text-xl"
+                                aria-current="page">Photography</a>
+                        </li>
+                        <li class="w-full block">
+                            <a href="#"
+                                class="border border-1 border-gray-200 py-6 hover:bg-gray-100 font-thin text-gray-800 block text-xl"
+                                aria-current="page">About Me</a>
+                        </li>
+                        <li class="w-full block">
+                            <a href="#"
+                                class="border border-1 border-gray-200 py-6 hover:bg-gray-100 font-thin text-gray-800 block text-xl"
+                                aria-current="page">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section with CTAs -->
+    <div class="hero-section h-[80vh] mt-6 relative">
+        <div
+            class="text-overlay py-12 absolute top-0 left-0 bottom-0 right-0 z-10 flex flex-col justify-center items-center gap-8">
+            <h3 class="text-3xl text-center text-white w-[320px] uppercase leading-loose font-thin">
+                <p class="m-0">look no further</p>
+                <p class="m-0">I would be honored to capture and preserve the special moments in your life.
+                </p>
+            </h3>
+            <!-- CTAs -->
+            <div class="hero-actions flex flex-col justify-center gap-3">
+                <a href="" class="border-2 border-black text-center uppercase font-thin min-w-[220px] px-4">
+                    Photographs
+                </a>
+                <a href=""
+                    class="border-2 border-black bg-black text-white text-center uppercase font-thin min-w-[220px] px-4">
+                    Give a call
+                </a>
+            </div>
+        </div>
+        <video src="assets/video/2.mp4" class="grayscale object-cover h-full w-full" muted loop autoplay
+            poster="assets/logo/logo-bg.jpg"></video>
+    </div>
+
+    <!-- Samples / Meticulously captured and crafted -->
+    <div class="samples bg-cover bg-no-repeat bg-[url('assets/images/backgrounds/bg-1.png')] py-16 lg:py-32">
+
+        <div class="w-full py-12 lg:max-w-[1560px] lg:mx-auto">
+            <h2 class="text-3xl font-bold text-gray-600 uppercase text-center mx-auto leading-relaxed">
+                Meticulously captured and crafted!
+            </h2>
+        </div>
+        <!-- <div class="gap-2 columns-2 md:columns-3 lg:columns-5 lg:mx-32">
+            <img class="w-full mb-2" src="assets/images/samples/sample-1.jpg" />
+            <img class="w-full mb-2" src="assets/images/samples/sample-2.jpg" />
+            <img class="w-full mb-2" src="assets/images/samples/sample-3.jpg" />
+            <img class="w-full mb-2" src="assets/images/samples/sample-4.jpg" />
+            <img class="w-full mb-2" src="assets/images/samples/sample-5.jpg" />
+            <img class="w-full mb-2" src="assets/images/samples/sample-6.jpg" />
+            <img class="w-full mb-2" src="assets/images/samples/sample-7.jpg" />
+            <img class="w-full mb-2" src="assets/images/samples/sample-8.jpg" />
+        </div> -->
+        <div class="grid grid-cols-2 gap-2 lg:grid-cols-5 mx-8 lg:max-w-[1560px] lg:mx-auto">
+            <div class="one">
+                <img class="w-full mb-2" src="assets/images/samples/sample-1.jpg" />
+            </div>
+            <div class="two">
+                <img class="w-full mb-2" src="assets/images/samples/sample-2.jpg" />
+                <img class="w-full mb-2" src="assets/images/samples/sample-3.jpg" />
+            </div>
+            <div class="three">
+                <img class="w-full mb-2" src="assets/images/samples/sample-4.jpg" />
+                <img class="w-full mb-2" src="assets/images/samples/sample-5.jpg" />
+            </div>
+            <div class="four">
+                <img class="w-full mb-2" src="assets/images/samples/sample-6.jpg" />
+                <img class="w-full mb-2" src="assets/images/samples/sample-7.jpg" />
+            </div>
+            <div class="five">
+                <img class="w-full mb-2" src="assets/images/samples/sample-8.jpg" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Own Quote -->
+    <div class="own-quote bg-[url('assets/images/backgrounds/bg-camera.png')] bg-no-repeat bg-right">
+        <div class="py-12 px-6 lg:py-64 flex flex-row gap-16 lg:max-w-[1560px] lg:mx-auto items-center">
+            <div class="hidden lg:block">
+                <img src="assets/images/samples/sample-4.jpg" class="bg-cover rounded-xl" alt="" srcset="">
+            </div>
+            <p
+                class="text-center text-3xl lg:text-3xl leading-relaxed lg:leading-loose lg:text-left text-gray-600 font-thin">
+                “Your <span class="text-gray-800 font-light relative">
+                    <span>memories are precious</span>
+                    <span class="left-0 right-0 inline-block h-[1px] bg-gray-400 bottom-[-4px] absolute"></span>
+                </span>, and your photographs
+                are the key to unlocking them in the future. My portraits
+                will not only <span class="text-gray-800 font-light relative">
+                    <span>capture your essence</span>
+                    <span class="left-0 right-0 inline-block h-[1px] bg-gray-400 bottom-[-4px] absolute"></span>
+                </span> but also
+                <span class="text-gray-800 font-light relative">
+                    <span>preserve your legacy</span>
+                    <span class="left-0 right-0 inline-block h-[1px] bg-gray-400 bottom-[-4px] absolute"></span>
+                </span>, making me
+                <span class="text-gray-800 font-light relative">
+                    <span>the perfect choice to entrust</span>
+                    <span class="left-0 right-0 inline-block h-[1px] bg-gray-400 bottom-[-4px] absolute"></span>
+                </span>
+                with your photographic needs.”
+            </p>
+        </div>
+    </div>
+
+    <!-- Self Introduction -->
+    <div class="overflow-hidden bg-[url('assets/images/backgrounds/bg-camera.png')] bg-no-repeat bg-left">
+        <div class="py-12 px-6 lg:py-64 flex flex-col-reverse lg:flex-row gap-16 lg:max-w-[1560px] lg:mx-auto items-center">
+            <div>
+                <p class="text-3xl text-center lg:text-2xl leading-relaxed lg:leading-loose lg:text-left text-gray-600 font-thin">
+                    I believe that every moment in life is worth capturing and preserving, and I am dedicated to doing
+                    just
+                    that through my work. With an eye for detail and an artistic vision, I strive to create images and
+                    videos that are not only beautiful, but also tell a story.
+                </p>
+                <p class="text-3xl text-center lg:text-2xl leading-relaxed lg:leading-loose lg:text-left text-gray-600 font-thin mt-4">
+                    I use state-of-the-art equipment and techniques to ensure that every image and video is of the
+                    highest
+                    quality. I also edit and retouch every image and video to perfection, ensuring that every final
+                    product
+                    is a true work of art.
+                </p>
+            </div>
+            <div class="relative">
+                
+                <div class="lg:h-[350px] lg:w-[600px] bg-transparent lg:border-2 lg:border-pink-300 lg:absolute static z-[-1] right-[-258px] top-[-82px]">
+                    <div class="lg:absolute top-[-70px] left-[-4px] text-2xl mb-4 lg:text-xl tracking-widest uppercase text-gray-400">
+                        <h3 class="font-thin text-center lg:text-left">I am</h3>
+                        <h3 class="text-center lg:text-left">Anant Sapkota</h3>
+                    </div>
+                </div>
+                <img src="assets/images/samples/sample-3.jpg" class="bg-cover rounded-sm" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
+
 </html>

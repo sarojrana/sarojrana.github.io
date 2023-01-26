@@ -10,13 +10,19 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/style.css">
 
+    <!-- Custom JS -->
+    <script src="scripts/smooth-scroll.js"></script>
+
     <!-- Tailwind CSS framework with first-party plugin -->
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 
+    <!-- For smooth scrolling -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
 </head>
 
-<body>
+<body class="scroll-smooth">
 
     <!-- Logo and Main Navigation -->
     <div class="logo-navigation flex flex-row justify-center">
@@ -26,12 +32,12 @@
                 <div class="w-full px-2">
                     <ul class="text-center grid grid-cols-2 gap-3 md:grid-cols-4">
                         <li class="w-full block">
-                            <a href="#"
+                            <a data-scroll href="#home"
                                 class="border border-1 border-gray-200 py-6 hover:bg-gray-100 font-thin text-gray-800 block text-xl"
                                 aria-current="page">Home</a>
                         </li>
                         <li class="w-full block">
-                            <a href="#"
+                            <a data-scroll href="#photography"
                                 class="border border-1 border-gray-200 py-6 hover:bg-gray-100 font-thin text-gray-800 block text-xl"
                                 aria-current="page">Photography</a>
                         </li>
@@ -76,7 +82,8 @@
     </div>
 
     <!-- Samples / Meticulously captured and crafted -->
-    <div class="samples bg-cover bg-no-repeat bg-[url('assets/images/backgrounds/bg-1.png')] py-16 lg:py-32">
+    <div class="samples bg-cover bg-no-repeat bg-[url('assets/images/backgrounds/bg-1.png')] py-16 lg:py-32"
+        id="photography">
 
         <div class="w-full py-12 lg:max-w-[1560px] lg:mx-auto">
             <h2 class="text-3xl font-bold text-gray-600 uppercase text-center mx-auto leading-relaxed">
@@ -117,7 +124,7 @@
 
     <!-- Own Quote -->
     <div class="own-quote bg-[url('assets/images/backgrounds/bg-camera.png')] bg-no-repeat bg-right">
-        <div class="py-12 px-6 lg:py-64 flex flex-row gap-16 lg:max-w-[1560px] lg:mx-auto items-center">
+        <div class="py-32 px-6 lg:py-64 flex flex-row gap-16 lg:max-w-[1560px] lg:mx-auto items-center">
             <div class="hidden lg:block">
                 <img src="assets/images/samples/sample-4.jpg" class="bg-cover rounded-xl" alt="" srcset="">
             </div>
@@ -146,16 +153,19 @@
     </div>
 
     <!-- Self Introduction -->
-    <div class="overflow-hidden bg-[url('assets/images/backgrounds/bg-camera.png')] bg-no-repeat bg-left">
-        <div class="py-12 px-6 lg:py-64 flex flex-col-reverse lg:flex-row gap-16 lg:max-w-[1560px] lg:mx-auto items-center">
+    <div class="overflow-hidden bg-[url('assets/images/backgrounds/bg-wave.png')] bg-cover bg-no-repeat">
+        <div
+            class="py-12 px-6 lg:py-64 flex flex-col-reverse lg:flex-row gap-16 lg:max-w-[1560px] lg:mx-auto items-center bg-[url('assets/images/backgrounds/bg-quote.png')] bg-no-repeat bg-[top_7rem_left_0rem]">
             <div>
-                <p class="text-3xl text-center lg:text-2xl leading-relaxed lg:leading-loose lg:text-left text-gray-600 font-thin">
+                <p
+                    class="text-3xl text-center lg:text-2xl leading-relaxed lg:leading-loose lg:text-left text-gray-600 font-thin">
                     I believe that every moment in life is worth capturing and preserving, and I am dedicated to doing
                     just
                     that through my work. With an eye for detail and an artistic vision, I strive to create images and
                     videos that are not only beautiful, but also tell a story.
                 </p>
-                <p class="text-3xl text-center lg:text-2xl leading-relaxed lg:leading-loose lg:text-left text-gray-600 font-thin mt-4">
+                <p
+                    class="text-3xl text-center lg:text-2xl leading-relaxed lg:leading-loose lg:text-left text-gray-600 font-thin mt-4">
                     I use state-of-the-art equipment and techniques to ensure that every image and video is of the
                     highest
                     quality. I also edit and retouch every image and video to perfection, ensuring that every final
@@ -164,11 +174,12 @@
                 </p>
             </div>
             <div class="relative">
-                
-                <div class="lg:h-[350px] lg:w-[600px] bg-transparent lg:border-2 lg:border-pink-300 lg:absolute static z-[-1] right-[-258px] top-[-82px]">
-                    <div class="lg:absolute top-[-70px] left-[-4px] text-2xl mb-4 lg:text-xl tracking-widest uppercase text-gray-400">
+                <div
+                    class="lg:h-[350px] lg:w-[600px] bg-transparent lg:border-2 lg:border-pink-300 lg:absolute static z-[-1] right-[-258px] top-[-82px]">
+                    <div
+                        class="lg:absolute top-[-70px] left-[-4px] text-2xl mb-4 lg:text-xl tracking-widest uppercase text-gray-400">
                         <h3 class="font-thin text-center lg:text-left">I am</h3>
-                        <h3 class="text-center lg:text-left">Anant Sapkota</h3>
+                        <h3 class="text-center">Anant Sapkota</h3>
                     </div>
                 </div>
                 <img src="assets/images/samples/sample-3.jpg" class="bg-cover rounded-sm" alt="" srcset="">
@@ -176,7 +187,58 @@
         </div>
     </div>
 
+    <div class="find-me-on">
+        <div class="w-full py-12 lg:mx-auto lg:text-xl lg:mt-32 tracking-[.25em] lg:tracking-[.50em] uppercase text-gray-400 font-thin">
+            <h2 class="lg:text-3xl text-center text-gray-400">
+                Find me on
+            </h2>
+            <h2 class="text-center lg:text-4xl lg:mt-2 text-gray-500">
+                social Handles
+            </h2>
+        </div>
 
+        <div
+            class="grid grid-cols-2 lg:pb-12 gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:max-w-[calc(100vw_-_100px)] xl:max-w-[calc(100vw_-_600px)] mx-auto">
+            <div
+                class="relative h-[calc(100vh_-_500px)] lg:h-[calc(100vh_-_240px)] bg-center grayscale hover:grayscale-0 bg-cover bg-[url('assets/images/samples/sample-4.jpg')] bg-cover bg-no-repeat">
+                <div
+                    class="h-2 left-0 right-0 bottom-[-8px] grayscale-0 bg-gradient-to-r from-[#f09433] via-[#e6683c] via-[#dc2743] via-[#dc2743] to-[#bc1888] absolute bottom-[-4px]">
+                </div>
+                <a href="https://www.instagram.com/weddingdiaryaustralia" target="_blank" title="Click or Tap to visit"
+                    class="absolute bottom-0 top-0 left-0 right-0 text-slate-100/50 grid place-content-center hover:text-white hover:bg-gray-100/10 hover:transition-all ease bg-gradient-to-r from-[#f09433]/10 via-[#e6683c]/10 via-[#dc2743]/10 via-[#dc2743]/10 to-[#bc1888]/10 text-center font-thin text-md tracking-widest uppercase">Instagram</a>
+            </div>
+            <div
+                class="relative h-[calc(100vh_-_500px)] lg:h-[calc(100vh_-_240px)] bg-center grayscale hover:grayscale-0 bg-cover bg-[url('assets/images/samples/sample-8.jpg')] bg-cover bg-no-repeat">
+                <div
+                    class="h-2 left-0 right-0 bottom-[-8px] grayscale-0 bg-gradient-to-r from-[#3b5998] to-[#3b5998] absolute bottom-[-4px]">
+                </div>
+                <a href="https://www.facebook.com/weddingdiaryaustralia" target="_blank" title="Click or Tap to visit"
+                    class="absolute bottom-0 top-0 left-0 right-0 text-slate-100/50 grid place-content-center hover:text-white hover:bg-gray-100/10 hover:transition-all ease bg-gradient-to-r from-[#3b5998]/10 to-[#3b5998]/10 text-center font-thin text-md tracking-widest uppercase">Facebook</a>
+            </div>
+            <div
+                class="relative h-[calc(100vh_-_500px)] lg:h-[calc(100vh_-_240px)] bg-center grayscale hover:grayscale-0 bg-cover bg-[url('assets/images/samples/sample-7.jpg')] bg-cover bg-no-repeat">
+                <div
+                    class="h-2 left-0 right-0 bottom-[-8px] grayscale-0 bg-gradient-to-r from-[#010101] via-[#69C9D0] via-[#69C9D0] to-[#EE1D52] absolute bottom-[-4px]">
+                </div>
+                <a href="https://www.tiktok.com/@weddingdiaryaustralia" target="_blank" title="Click or Tap to visit"
+                    class="absolute bottom-0 top-0 left-0 right-0 text-slate-100/50 grid place-content-center hover:text-white hover:bg-gray-100/10 hover:transition-all ease bg-gradient-to-r from-[#010101]/10 via-[#69C9D0]/10 via-[#69C9D0]/10 to-[#EE1D52]/10 text-center font-thin text-md tracking-widest uppercase">Tiktok</a>
+            </div>
+            <div
+                class="relative h-[calc(100vh_-_500px)] lg:h-[calc(100vh_-_240px)] bg-center grayscale hover:grayscale-0 bg-cover bg-[url('assets/images/samples/sample-2.jpg')] bg-cover bg-no-repeat">
+                <div
+                    class="h-2 left-0 right-0 bottom-[-8px] grayscale-0 bg-gradient-to-r from-[#c4302b] to-[#c4302b] absolute bottom-[-4px]">
+                </div>
+                <a href="https://www.youtube.com/@weddingdiaryaustralia" target="_blank" title="Click or Tap to visit"
+                    class="absolute bottom-0 top-0 left-0 right-0 text-slate-100/50 grid place-content-center hover:text-white hover:text-white hover:bg-gray-100/10 hover:transition-all ease bg-gradient-to-r from-[#c4302b]/10 to-[#c4302b]/10 text-center font-thin text-md tracking-widest uppercase">Youtube</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 800
+        });
+    </script>
 
 </body>
 
